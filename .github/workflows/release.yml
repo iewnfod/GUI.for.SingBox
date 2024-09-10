@@ -30,9 +30,9 @@ jobs:
           - os: ubuntu-latest
             GOOS: linux
             GOARCH: amd64
-          # - os: ubuntu-latest
-          #   GOOS: linux
-          #   GOARCH: arm64
+          - os: ubuntu-latest
+            GOOS: linux
+            GOARCH: arm64
     runs-on: ${{ matrix.build.os }}
     env:
       APP_NAME: GUI.for.SingBox
